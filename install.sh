@@ -10,7 +10,7 @@ do
 	fi
 	cp -rp  "../../${TARGET}" "../../${client}"
 	rm  "../../${client}/wp-config.php"
-	mv  "../../${client}/wp-config-model.php" "../../${client}/wp-config.php"
+	cp  "../../${TARGET}/wp-config-model.php" "../../${client}/wp-config.php"
 	sed -i -e 's/usedbname/wp-${client}/g' "../../${client}/wp-config.php"
 	DBPASS = ` wp config get --allow-root --constant=DB_PASSWORD`
 	DBUSER = ` wp config get --allow-root --constant=DB_USER`
