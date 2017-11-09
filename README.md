@@ -16,5 +16,5 @@
 # Command line
 
 ```shell
-./install.sh "namesClients" "urlsite"
+./install.sh "clients" "baseurl"
 ```
